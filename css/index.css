@@ -1,0 +1,217 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
+}
+  
+  .top-navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Lightly touched effect */
+    color: #000000; /* Black color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Adjusted to spread items */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    z-index: 1; /* Ensure the navbar is above other content */
+    font-family: 'Georgia', Times New Roman, Times, serif; /* Apply font family */
+    width: 80%; /* Added fixed width */
+    margin: 0 auto; /* Centered horizontally */
+    
+  }
+  
+  .top-navbar .top-menu ul li a {
+    color: #000000; /* Black color */
+    text-decoration: none;
+    position: relative; /* Add relative positioning */
+  }
+  .top-navbar .top-menu ul li a:hover,
+.top-navbar .top-menu ul li a.active {
+  color: #007bff; /* Blue color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.top-navbar .top-menu ul li a::after {
+    content: '';
+    position: absolute;
+    left: 20px; /* Adjust the gap between the item and line */
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  .top-navbar .top-menu ul li a:hover::after,
+  .top-navbar .top-menu ul li a.active::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  
+  .top-navbar .contact-info ul,
+  .top-navbar .social-media ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .top-navbar .contact-info ul li,
+  .top-navbar .social-media ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 14px;
+    font-family: 'Georgia', Times New Roman, Times, serif; /* Apply font family */
+  }
+  
+/* Adjust spacing between social media icons */
+.top-navbar .social-media ul li {
+    display: inline;
+    margin-right: 10px; /* Decreased margin for spacing */
+  }
+  
+  /* Style mail and phone number links */
+  .top-navbar .contact-info ul li a {
+    font-family: 'Arial', sans-serif; /* Change font */
+    text-decoration: none; /* Remove underline */
+    color: #000000; /* Black color */
+  }
+  
+  .top-navbar .contact-info ul li a:hover {
+    color: #007bff; /* Blue color on hover */
+  }
+    
+  .fa-envelope,
+  .fa-phone {
+    color: #007bff; /* Blue color */
+  }
+  
+  /* Font Awesome icons */
+  .fa-envelope,
+  .fa-phone {
+    color: #007bff; /* Blue color */
+  }
+  
+  /* Second Navbar styles */
+  .second-navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Lightly touched effect */
+    color: #000000; /* Black color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    z-index: 10; /* Ensure the navbar is below other content */
+  }
+  
+  .second-navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .second-navbar .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .second-navbar h1 {
+    margin: 0;
+  }
+  
+  .second-navbar .top-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .second-navbar .top-menu ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .second-navbar .top-menu ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .second-navbar .top-menu ul li a {
+    color: #000000; /* Black color */
+    text-decoration: none;
+  }
+  
+  .second-navbar .top-menu ul li a:hover,
+  .second-navbar .top-menu ul li a.active {
+    color: #007bff; /* Blue color */
+  }
+ 
+  /* Main Content Area styles */
+  .main-content {
+    padding: 20px;
+    color: rgb(19, 0, 0);
+    text-align: center;
+    margin-top: 100px; /* add this property */
+  }
+  .background-container {
+    width: 100%;
+    height: 100vh; /* use a fixed value */
+    background-image: url('https://www.gracemedicaloffice.com/wp-content/uploads/2016/08/iStock_75734267_MEDIUM.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: -10px 20px 10px;
+    /* Increased padding for larger size */
+ border-radius: 25px; /* Rounded edges */
+   
+  }
+  .image-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-overlay h2 {
+    color: rgb(251, 20, 20);
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-header {
+    position: absolute;
+    top: 88%; /* Position at the center vertically */
+    right: 40px; /* Position 20px from the right */
+    transform: translateY(-50%); /* Center vertically */
+    text-align: right; /* Align text to the right */
+    color: rgb(0, 0, 0); /* Text color */
+  }
+  
+  .dashboard-header h2 {
+    font-size: 51px;
+  }
+
+  .imgcontain{
+    position: absolute;
+    top: 17%; /* Position at the center vertically */
+    right: 290px; /* Position 20px from the right */
+  }
+  .imgcontain1{
+    position: absolute;
+    top: 40%; /* Position at the center vertically */
+    right: 50px; /* Position 20px from the right */
+  }
+  .explore-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+ /* Increased padding for larger size */
+    border-radius: 25px; /* Rounded edges */
+    cursor: pointer;
+    position: absolute;
+    bottom: -55px;
+    left: 210px; /* Positioned on the left side */
+    font-size: 25px; /* Increased font size */
+  }
