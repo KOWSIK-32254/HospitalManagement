@@ -179,18 +179,6 @@ body, html {
     margin-bottom: 20px;
   }
   
-  .dashboard-header {
-    position: absolute;
-    top: 88%; /* Position at the center vertically */
-    right: 40px; /* Position 20px from the right */
-    transform: translateY(-50%); /* Center vertically */
-    text-align: right; /* Align text to the right */
-    color: rgb(0, 0, 0); /* Text color */
-  }
-  
-  .dashboard-header h2 {
-    font-size: 51px;
-  }
 
   .imgcontain{
     position: absolute;
@@ -202,6 +190,20 @@ body, html {
     top: 40%; /* Position at the center vertically */
     right: 50px; /* Position 20px from the right */
   }
+  .imgcontain2{
+    position: absolute;
+    top: 70%; /* Position at the center vertically */
+    right: 280px; /* Position 20px from the right */
+    
+  }
+
+  .imgcontain3{
+    position: absolute;
+    top: 1170px; /* Position at the center vertically */
+    right: 930px; /* Position 20px from the right */
+    
+  }
+
   .explore-button {
     background-color: black;
     color: white;
@@ -211,7 +213,62 @@ body, html {
     border-radius: 25px; /* Rounded edges */
     cursor: pointer;
     position: absolute;
-    bottom: -55px;
-    left: 210px; /* Positioned on the left side */
-    font-size: 25px; /* Increased font size */
+    bottom: -15px;
+    left: 1229px; /* Positioned on the left side */
+    font-size: 20px; /* Increased font size */
+  }
+  .card {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 220px;
+    position: absolute;
+    top: 750px;
+    left: 20%;
+    transform: translateX(-50%);
+  
+  }
+  .card1 {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 180px;
+    position: absolute;
+    top: 770px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+  }
+  
+  .card2 {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 190px;
+    position: absolute;
+    top: 770px;
+    left: 80%;
+    transform: translateX(-50%);
+  
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    margin-bottom: 0;
+    padding: 2px 4px;
+    line-height: 25px;
   }
